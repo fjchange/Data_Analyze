@@ -44,7 +44,7 @@ class LU:
             self.X[i][0]=(self.Y[i][0]-sum_ux)/self.U[i,i]
         return self.X
 
-A=np.array([[12,-3,3],[0,-1.5,3.5],[0,0,3.66666666666666666667]])
-b=np.array([[15],[7.5],[11]])
+A=np.array([[3,2,3],[2,2,0],[3,0,12]])
+b=np.array([[5],[3],[7]])
 lu=LU(A,b,1e-4)
 print(lu.cal())
